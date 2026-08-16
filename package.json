@@ -1,0 +1,47 @@
+{
+  "name": "@dsh-external/dsh-client-ui-skin-roxy",
+  "version": "0.2.0",
+  "private": true,
+  "description": "A self-contained Roxy-inspired celestial skin for DeepSeek Harness.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "license": "MIT",
+  "files": [
+    "assets",
+    "lib",
+    "src",
+    "cordis.patch.yml",
+    "skin.json",
+    "tsdown.config.ts"
+  ],
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "pnpm run clean && tsdown",
+    "check": "pnpm run typecheck && pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "lightningcss": "^1.32.0",
+    "tsdown": "^0.22.2",
+    "typescript": "^6.0.3"
+  },
+  "packageManager": "pnpm@10.15.0",
+  "engines": {
+    "node": ">=22"
+  }
+}

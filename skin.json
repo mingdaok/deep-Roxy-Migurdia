@@ -1,0 +1,15 @@
+{
+  "id": "roxy-celestial-library",
+  "name": "洛琪希·星穹水神书库",
+  "nameEn": "Roxy Celestial Water-God Library",
+  "version": "0.2.0",
+  "description": "深海藏蓝、冰蓝星辉与古金饰线构成的洛琪希主题 DeepSeek Harness 界面皮肤。",
+  "palette": {
+    "background": "#030817",
+    "panel": "#07162f",
+    "text": "#e9f4ff",
+    "ice": "#82d9ff",
+    "gold": "#d9b95f"
+  },
+  "tags": ["roxy", "celestial", "dark", "anime", "deepseek-harness"]
+}

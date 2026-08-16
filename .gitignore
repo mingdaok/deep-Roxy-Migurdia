@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+lib/
+store/
+*.tsbuildinfo
+*.log
+.env
+.env.*
+.qa/
+design-qa.md
+.DS_Store
+Thumbs.db

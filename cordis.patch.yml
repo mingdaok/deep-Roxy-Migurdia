@@ -1,0 +1,8 @@
+# Roxy Migurdia skin bundle patch: inserts its public dsh.client entry into
+# the web plugin roster. Install the package with
+#   dsh plugin --profile <name> add <path-to-this-package>
+# The row id (ui-skin-roxy) is the cordis fiber id; the module name is the
+# package that ships the client bundle.
+- insert:
+    - id: ui-skin-roxy
+      name: '@dsh-external/dsh-client-ui-skin-roxy'
